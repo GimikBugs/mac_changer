@@ -9,10 +9,11 @@ parser = optparse.OptionParser()
 parser.add_option("-i", "--interface", dest="interface", help="Interface to change the MAC address of..")
 parser.add_option("-m", "--mac", dest="mac", help="New MAC address..")
 
-parser.parse_args()
+# Calling methods
+(options, arguments) = parser.parse_args()
 
-interface = input("Interface > ")
-mac = input("New MAC address > ")
+interface = options.interface
+mac = options.mac
 
 print("[+] Changing MAC address for " + interface + " to " + mac + "...")
 
