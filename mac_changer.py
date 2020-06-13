@@ -22,3 +22,4 @@ subprocess.call(["ifconfig", interface, "hw", "ether", mac])
 subprocess.call(["ifconfig", interface, "up"])
 
 #adding comment as a test
+#last test
